@@ -1,0 +1,420 @@
+@import 'compass/css3';
+@import "components/variables", "components/mixins";
+@import "components/widgets/buttons";
+
+.customer-support-wrapper{
+        position: relative; z-index: 9996;
+
+    position: relative;
+    z-index: 9999;
+    h1, h2, h3, h4, h5, h6, ul{
+        margin:0;
+        padding:0;
+    }
+    li{
+        list-style:none;
+    }
+    .hide{
+        display:none !important;
+    }
+    @include media-breaks(large) {
+        z-index: 1;
+    }
+    clear:both;
+    * ,
+    *:before,
+        *:after {
+        @include box-sizing(border-box);
+        outline: 0;
+    }
+    @mixin intro{
+        *zoom: 1;
+        position:relative;
+        *z-index:0;
+        background-color: #F2F1F1;
+        color: $color-base;
+        font: normal 14px/18px $font-family-base, Arial;
+        line-height: 1;
+
+        &:before, &:after {
+            display: table;
+            line-height: 0;
+            content: "";
+        }
+        &:after {
+            clear: both;
+        }
+    }
+    .clearfix{
+        &:before, &:after {
+            display: table;
+            line-height: 0;
+            content: "";
+        }
+        &:after {
+            clear: both;
+        }
+	}
+	.content-wrapper{
+		max-width:1240px;
+		margin:0 auto;
+		padding:20px;
+
+		.service-link{
+			border: 1px solid #d9d9d9;
+			clear: both;
+			margin: 10px auto 0;
+			overflow: hidden;
+			width: 100%;
+			ul{
+			&:first-child{
+				border:none;
+			}
+					box-sizing: border-box;
+					float: left;
+					margin: 10px 0;
+					min-height: 190px;
+					padding: 5px 10px;
+					width: 25%;
+					border-left:1px solid #d9d9d9;
+				li{
+					padding:0 0 8px;
+					h4{
+					margin-bottom:8px;
+					}
+				}
+			}
+		}
+		.tab-content{
+						margin-top:30px;
+			.tab-menu{
+					width:100%;
+				li{
+					display: inline-block;
+					text-align: center;
+					width: 19.8%;
+					a{
+							display:block;
+							padding:20px 0;
+							border-top:1px solid #d9d9d9;
+							border-left:1px solid #d9d9d9;
+							border-right:1px solid #d9d9d9;
+							border-top-left-radius: 6px;
+							border-top-right-radius: 6px;
+							&.active-tab{
+									border-bottom:1px solid #fff !important;
+					}
+						}
+					}
+				}
+				.maincont{
+					border: 1px solid #d9d9d9;
+					clear: both;
+					margin-top: -1px;
+					float: left;
+					padding: 20px;
+					width: 100%;
+          min-height: 350px;
+					.faQ{
+							ul{
+									float:left;
+									width:40%;
+								li{
+								list-style:disc;
+								line-height:30px;
+								border-bottom:1px dashed #d8d8d8;
+								list-style:inside disc none;
+								a{
+										display:inline-block;
+										width:90%;
+										margin-left:5px;
+								}
+							}
+						}
+						 .Rightcont {
+									background-color: #fafafa;
+									border: 1px solid #dedede;
+									border-radius: 6px;
+									float: left;
+									margin: 15px 0 0 15px;
+									padding: 15px;
+									width: 40%;
+									ul{
+										width:50%;
+										li{
+											list-style:none;
+											border:none;
+											input[type="text"] {
+												width:100%!important;
+												border:1px solid #d7d7d7;
+												padding:7px;
+											}
+										.flR{
+										float:right;
+									}
+									input[type="button"]{
+										-moz-appearance: none;
+										background-color: #ff7d23;
+										border: 1px solid #ff7d23;
+										color: #fff;
+										cursor: pointer;
+										font: 1.571em/20px "Lato Regular",Arial;
+										margin-top: 15px;
+										padding: 8px 20px;
+									}
+								}
+							}
+						 }
+					}
+					.support-form{
+									ul{
+										li{
+											float:left;
+											width:45%;
+											margin-bottom:20px;
+									&.img-dsc{
+											margin-left:5px;
+											width:auto;
+											font-size:11px;
+											font-weight:bold;
+											label{
+												width:auto;
+											}
+										}
+                    &.form-custom{
+                      margin-left: 30px 20px;
+                        span{
+                             background-color: rgba(0, 0, 0, 0.4);
+                      }
+                      small{
+                          display: inline-block;
+                          width: 65%;
+                      }
+                    }
+											label{
+													float:left;
+													margin:15px 8px;
+													width:30%;
+												}
+										#recaptcha_widget{
+										width:65%;
+										overflow:hidden;
+											.captcha_widgetImg{
+												width:20%;
+												float:left;
+											}
+										.w-quat{
+												width:65% !important;
+												float:left;
+											}
+										}
+										.img-typ{
+											clear: both;
+											float: right;
+											font-size: 11px;
+											font-weight: bold;
+											margin-top: 10px;
+										}
+												.FileUpload{
+													float: left;
+													position: relative;
+													width:65%;
+											}
+											.Button-Hide {
+												height: 40px;
+												left: 0;
+												opacity: 0;
+												position: absolute;
+												text-align: right;
+												top: 0;
+												width: 100%;
+												z-index: 1;
+											}
+											  .custom-blue {
+												border-radius: 0;
+												float: none !important;
+												line-height: 31px;
+												margin: 0 0 0 -3px !important;
+												padding:8px 9px;
+												vertical-align: bottom;
+												width:auto;
+												color: #ffffff;
+												background-color: #078BB6;
+											}
+
+											.w-quat{
+												width:80% !important;
+											}
+
+														input[type="text"]{
+															background:#fff;
+															border:1px solid #d7d7d7;
+															width:65%;
+														}
+														.ddcommon{
+															width:65%!important;
+															padding:10px 3px;
+
+														li{
+																width:100% !important;
+														}
+															.pointDwnPax{
+																top:4px;
+
+															}
+														}
+														&.cont-quest{
+																	width:100%;
+																	float:none;
+																	overflow:hidden;
+																	label{
+																		margin: 15px 0 0 12px;
+																		width: 14%;
+																	}
+																	textarea{
+																		border: 1px solid #d9d9d9;
+																		display: block !important;
+																		float: left;
+																		width: 75%;
+																	}
+																}
+																&.submit-form{
+																	input[type="button"]{
+																		float: right;
+																		font-size: 16px;
+																		font-weight: bold;
+																		line-height: 30px;
+																		padding: 5px;
+																		width: 25%;
+																	}
+																}
+																&.wfull{
+																	width:100%;
+																	float:left;
+																}
+															.custom-radio-baggage_sprite{
+																background:url("http://ns.yatracdn.com/common/images/fresco/custom-radio-2.png") no-repeat 0 0;
+																	width:20px;
+																	height:20px;
+																	display:inline-block;
+																	vertical-align:middle;
+																}
+																.active-radio{
+																	background-position:-9px -16px;
+																}
+
+																label.selected .active-radio{
+																	background-position:-43px -17px !important;
+																}
+													}
+												}
+											}
+										.feedback-type{
+														width:100%;
+														padding-top:20px;
+														ul{
+															li{
+																display: inline-block;
+																margin-left: -3px;
+																width: 33.434%;
+																border-bottom: 1px solid #d9d9d9;
+																border-top: 1px solid #d9d9d9;
+																&:first-child{
+																		border-left:none;
+																	}
+															a{
+																border-left:1px solid #d9d9d9;
+																display:block;
+																display: block;
+																padding: 20px 10px;
+																&.active-form{
+																	background:#E7E7E7;
+																	color:#333;
+																}
+															}
+															.content{
+																span{
+																	span{
+																			padding:0 0 0 5px;
+																			display:block;
+																			color:#333;
+																			font-size:16px;
+																			text-align: center;
+																	}
+																	.info{
+																			padding-top:5px;
+																			color:#999;
+																			font-size:14px;
+																			text-align:left;
+																	}
+																}
+															}
+														}
+													}
+												}
+													.content-pad{
+																padding:20px;
+															}
+									#phone-suppprt{
+											.phoneimg{
+												clear: both;
+												margin: 0 auto;
+												overflow: hidden;
+												padding: 5px 0 15px;
+												width: 30%;
+											img{
+													display:inline-block;
+													float:left;
+											}
+												 .phoneinfo{
+													float: left;
+													margin-top: 20px;
+												}
+											}
+											.my-table thead th{
+												background-color:#efefef; border-bottom:1px solid #d8d8d8; text-align:left;
+												padding: 15px
+												}
+											.my-table tbody td {
+												border-bottom:1px solid #d8d8d8;
+												padding: 15px;
+											}
+											.cont_tab{
+												clear: both;
+												overflow: hidden;
+												width: 100%;
+											.new-table{
+												display: block;
+												float: left;
+												width: 100%;
+												}
+											}
+										}
+                    #store-support{
+                      li>
+                      span{
+                        display: inline-block;
+                        float: left;
+                        margin-top: 5px;
+                      }
+                      #gmap_address_msdd{
+                        &.dd{
+                              width:10% !important;
+                              .pointDwnPax{
+                                top:6px !important;
+                              }
+                            }
+                          }
+                          #data{
+                            span{
+                                display: block;
+                                width:25%;
+                                margin-bottom: 10px;
+                                color:#999;
+                            }
+                          }
+                        }
+									}
+								}
+							}
+						}
